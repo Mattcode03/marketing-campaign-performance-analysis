@@ -19,7 +19,7 @@ Built an end-to-end business intelligence pipeline to evaluate multi-channel dig
 To ensure analytical accuracy and avoid common BI reporting pitfalls, the following data modeling decisions were implemented:
 
 1. **Synthetic Dataset Scale & High ROAS Ratios:**
-   * The underlying dataset is a **fabricated (synthetic) dataset sourced from Kaggle**, not real company data. As a result, the revenue and cost figures are highly inflated and the ROAS is unrealistic: daily revenues frequently reach the millions against modest acquisition costs, resulting in a headline **Blended ROAS of 1,367.16x** (`R28.66bn` total revenue vs. `R20.96M` total spend).
+   * The underlying dataset is a **fabricated (synthetic) dataset sourced from [Kaggle](https://www.kaggle.com/datasets/ishitabahamnia/nykaa-campaign-data-csv)**, not real company data. As a result, the revenue and cost figures are highly inflated and the ROAS is unrealistic: daily revenues frequently reach the millions against modest acquisition costs, resulting in a headline **Blended ROAS of 1,367.16x** (`R28.66bn` total revenue vs. `R20.96M` total spend).
    * Rather than altering the source figures, the model preserves raw data integrity while explicitly documenting the scale. The figures should be read as a demonstration of the analytics pipeline and dashboard design, not as real-world marketing performance benchmarks.
 2. **Weighted Blended ROAS vs. Simple Averages:**
    * Pre-calculated row-level ratio columns (`roas`) were excluded from direct aggregation in Power BI to prevent distorted sums or unweighted averages.
