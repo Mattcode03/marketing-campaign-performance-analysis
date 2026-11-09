@@ -29,6 +29,7 @@ To ensure analytical accuracy and avoid common BI reporting pitfalls, the follow
 
 1. **Synthetic Dataset Scale & High ROAS Ratios:**
    * The underlying dataset is a **fabricated (synthetic) dataset sourced from [Kaggle](https://www.kaggle.com/datasets/ishitabahamnia/nykaa-campaign-data-csv)**, not real company data. As a result, the revenue and cost figures are highly inflated and the ROAS is unrealistic: daily revenues frequently reach the millions against modest acquisition costs, resulting in a headline **Blended ROAS of 1,367.16x** (`R28.66bn` total revenue vs. `R20.96M` total spend).
+   * **Currency:** the source dataset states no currency. The `R` prefix on the dashboard (e.g. `R28.66bn`) is just a display/formatting setting in Power BI, so these figures should not be read as real rand spend or revenue.
    * Rather than altering the source figures, the model preserves raw data integrity while explicitly documenting the scale. The figures should be read as a demonstration of the analytics pipeline and dashboard design, not as real-world marketing performance benchmarks.
 2. **Weighted Blended ROAS vs. Simple Averages:**
    * Pre-calculated row-level ratio columns (`roas`) were excluded from direct aggregation in Power BI to prevent distorted sums or unweighted averages.
@@ -44,7 +45,8 @@ To ensure analytical accuracy and avoid common BI reporting pitfalls, the follow
 
 ### 💻 Core SQL & DAX Logic
 
-#### PostgreSQL Aggregation Query (`sql/01_kpi_metrics.sql`)
+#### PostgreSQL Aggregation Query (`sql/03_dashboard_aggregation.sql`)
+This is the daily aggregation that feeds the Power BI model. `sql/01_kpi_metrics.sql` is a separate channel-level summary (single-channel rows only) used for sanity-checking the totals.
 
 ```sql
 SELECT
