@@ -1,5 +1,14 @@
 # Marketing Campaign Performance & ROI Analytics Dashboard
 
+### 🖼️ Dashboard Preview
+![Marketing Campaign Performance Dashboard](power-bi/Marketing%20Campaign%20Performance%20Dashboard.png)
+
+*Interactive slicing and cross-filtering in action:*
+
+![Dashboard interaction demo](power-bi/Dashboard_engagement.gif)
+
+---
+
 ### 🎯 Business Objective
 Built an end-to-end business intelligence pipeline to evaluate multi-channel digital marketing performance from **July 2024 to June 2025**. The dashboard enables marketing stakeholders to monitor total acquisition spend, compare budget allocation against revenue attribution, and identify high-efficiency customer segments and campaign types.
 
