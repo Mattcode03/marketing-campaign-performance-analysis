@@ -1,10 +1,5 @@
 # Marketing Campaign Performance & ROI Analytics Dashboard
 
-### 📊 Project Links
-* **[2-Minute Video Walkthrough (Loom)](PASTE_YOUR_LOOM_LINK_HERE)**
-
----
-
 ### 🎯 Business Objective
 Built an end-to-end business intelligence pipeline to evaluate multi-channel digital marketing performance from **July 2024 to June 2025**. The dashboard enables marketing stakeholders to monitor total acquisition spend, compare budget allocation against revenue attribution, and identify high-efficiency customer segments and campaign types.
 
